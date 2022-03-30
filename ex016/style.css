@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+h2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-kerning: initial;
+    font-style: italic;
+    background-color: rgba(89, 0, 127, 0.75);
+}

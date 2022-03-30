@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: auto;
+            border-bottom: 1px solid black;
+            text-align: center;
+        }
+
+        nav {
+            background-color: lightgray;
+            padding: 1px;
+            border-radius: 10px;
+            box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.534);
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+
+        nav > a:hover {
+            background-color: rgb(155, 154, 154) ;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px 0px;
+            box-shadow: 7px 7px 20px black;
+        }
+
+        section > a{
+            text-decoration: none;
+        }
+
+        #assuntos{
+            padding: 5px;
+        }
+
+        article {
+            background-color: rgba(211, 211, 211, 0.575);
+            padding: 10px;
+            margin: 0px;
+        }
+
+        article > aside {
+            background-color: rgb(182, 181, 181);
+            width: max-content;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+
+        .menu-rodape {
+            display: flex ;
+            text-align: center;
+            padding: 10px;
+            text-decoration: none;
+            background-color: rgb(99, 99, 99);
+        }
+
+        .menu-rodape > .um {
+            margin: auto;
+            text-align: left;
+            text-decoration: none;
+            color: white;
+        }
+
+        .menu-rodape > .dois {
+            margin: auto;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+        }
+
+        footer > section > .um > a {
+            text-decoration: none;
+            color: white;
+        }
+        
+        footer > section > .dois > a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .fundo {
+            border-radius: 20px 0px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+                <a href="">link</a>
+                <a href="">link</a>
+                <a href="">link</a>
+                <a href="">link</a>
+                <a href="">link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <a href="">Esporte</a> | 
+            <a href="">Política</a> |
+            <a href="">Tecnologia</a>
+        </section>
+        <section id="noticias">
+            <article class="fundo">
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea sed numquam expedita corrupti molestiae laborum magni rem nemo voluptates iusto? Aliquid maiores sequi nobis tenetur saepe laborum aperiam, voluptatum libero.</p>
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <section class="menu-rodape">
+            <section class="um">
+                <a href="">link</a><br>
+                <a href="">link</a><br>
+                <a href="">link</a><br>
+                <a href="">link</a><br>
+            </section>
+            <section class="dois">
+                <a href="">link</a><br>
+                <a href="">link</a><br>
+                <a href="">link</a><br>
+                <a href="">link</a><br>
+            </section>
+        </section>
+        <aside>criado por Andarilho Dev</aside>
+    </footer>
+</body>
+</html>

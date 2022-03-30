@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente em CSS</title>
+    <style>
+        
+        body {
+            background: #cedce7;
+            background: linear-gradient(45deg, #F2B950, #F27244, #F2506E, #BF36A8, #8836BF );
+            background-attachment: fixed;
+        }
+
+        .horizontal {border-radius: 8%;
+            float: left;
+            height: 200px;
+            width: 200px;
+            margin: 10px;
+            background: #cedce7;
+            background: linear-gradient(to right, #cedce7, #596a72)
+        }
+
+        .vertical {
+            border-radius: 8%;
+            float: left;
+            height: 200px;
+            width: 200px;
+            margin: 10px;
+            background: #cedce7;
+            background: linear-gradient(to bottom, #cedce7, #596a72)
+        }
+
+        .diagonal {
+            border-radius: 8%;
+            float: left;
+            height: 200px;
+            width: 200px;
+            margin: 10px;
+            background: #cedce7;
+            background: linear-gradient(45deg, #F2B950, #F27244, #F2506E, #BF36A8, #8836BF )
+        }
+
+        .radial {
+            border-radius: 8%;
+            float: left;
+            height: 200px;
+            width: 200px;
+            margin: 10px;
+            background: #cedce7;
+            background: radial-gradient( circle, red, yellow);
+        }
+
+        .multi-stop {
+            border-radius: 8%;
+            float: left;
+            height: 200px;
+            width: 200px;
+            margin: 10px;
+            background: #cedce7;
+            background: linear-gradient(180deg, #F2506E 10%, #F27244 10%, #F2B950 60%, #BF36A8 10%, #8836BF 10%)
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Testando Gradiente</h1>
+
+    <div class="horizontal"></div>
+    <div class="vertical"></div>
+    <div class="diagonal"></div>
+    <div class="radial"></div>
+    <div class="multi-stop"></div>
+</body>
+</html>
