@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+
+    <!--
+        action="" -> deve receber o nome do arquivo PHP que vai processar o formulário
+        method="" -> você tem que escolher entre o método POST ou GET 
+                     GET: deixa todos os dados do formulário amostra na url, inclusive a do input:senha
+                     Obs.: este método só permite que seja digitado até 3.000 caracters em todo o formulário
+
+                     POST: é um pouco mais seguro pois não deixa os dados do formulário na url, mas deixa na area de rede se vc inspecionar a página(clicar com o botão direito na página)
+        autocomplete="" -> te deixa escolher se você quer deixar o formulário ser autocompletado ou se o usuário vai ter que digitar tudo
+    -->
+
+    <form action="cadastro.php" method="post" autocomplete="on">
+
+        <!--
+            input -> vai criar a caixa para entrar com os dados
+                type="" -> você escolhe o tipo de input que você quer
+                name="" -> você vai nomear o input (isso serve para o PHP)
+                id="" -> você vai marcar o input
+                required -> não vai deixar o formulário ser enviado se não estiver preenchido
+                minlength="" -> quantidade mínima que o input tem que ter
+                maxlength="" -> quantidade máxima que o input tem que ter
+                size="" -> vai deixar a largura da caixa de dialogo do input do tamanha que você quiser
+                placeholder="" -> deixa tipo uma etiqueta dentro da caixa de dialogo, ex.: usuário: | usuário       |
+                autocomplete="" (dentro do input) -> diz ao navegador qual deve ser a sugestão naquela caixa de dialogo, ex.: usuário: | usuário    | sugestão: qualquer que seja o usuário da pessoa /// neste caso o autocomplete que temos que colocar é autocomplete="username"
+
+            label -> faz uma ligação do que você escreveu antes do input com o input
+        -->
+        <p>
+            <label for="iusu">Usuário: </label>
+            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="20" size="8" placeholder="nome do usuário" autocomplete="username">
+        </p>
+        <p>
+            <label for="isen">Senha: </label>
+            <input type="password" name="sen" id="isen" required minlength="8" maxlength="20" size="8" placeholder="senha" autocomplete="current-password">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
